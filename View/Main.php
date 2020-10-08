@@ -19,7 +19,7 @@
 
     <!-- Form -->
     <div class="form  container p-4 mt-4 rounded shadow p-3 scale-in-hor-center">
-        <form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+        <form method="POST" action="<?php echo ($_SERVER["PHP_SELF"]); ?>">
 
             <!-- Title -->
             <div class="form-group">

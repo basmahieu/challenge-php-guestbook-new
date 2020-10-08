@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+require('guestbook.php');
 
 
 class UserValidator
@@ -29,36 +30,23 @@ class UserValidator
         $this->validateAuthor();
         $this->validateContent();
         $this->formValidationTrue();
-        $this->test();
+
+
+
         return $this->errors;
     }
 
     public function formValidationTrue()
     {
         if ($this->formValidation === true) {
-            echo '<div class="rounded-0 alert alert-success " role="alert ">Looking good!</div>';
+            $guestbook = new Guestbook;
+            $guestbook->guestbookData();
+            // $guestbook->showPost();
         } else {
             echo '<div class="rounded-0 alert alert-danger" role="alert">Please fill in all required fields</div>';
         }
     }
 
-    public function test()
-    {
-        if (file_exists('data/guestbook-data.json')) {
-            $currentData = file_get_contents('data/guestbook-data.json');
-            $arrayData = json_decode($currentData, true);
-            $extra = array(
-                'title' => $_POST['title'],
-                'author' => $_POST['author'],
-                'content' => $_POST['content']
-            );
-            $arrayData[] = $extra;
-            $finalData = json_encode(($arrayData));
-            if (file_put_contents('data/guestbook-data.json', $finalData)) {
-                echo 'SUCCES';
-            }
-        }
-    }
 
     public function validateTitle()
     {
