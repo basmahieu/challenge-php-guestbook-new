@@ -41,7 +41,6 @@ class UserValidator
         if ($this->formValidation === true) {
             $guestbook = new Guestbook;
             $guestbook->guestbookData();
-            // $guestbook->showPost();
         } else {
             echo '<div class="rounded-0 alert alert-danger" role="alert">Please fill in all required fields</div>';
         }

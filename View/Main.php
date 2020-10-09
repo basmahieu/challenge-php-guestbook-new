@@ -53,6 +53,16 @@
             <button name="submit" type="submit" class="button btn btn-primary">Hit me!</button>
     </div>
 
+    <!-- Posts -->
+    <div class=" container">
+        <h2>Posts</h2>
+    </div>
+
+    <?php
+    $guestbook = new Guestbook;
+    $guestbook->showPosts();
+    ?>
+
     <?php include 'Footer.php' ?>
 
     <!-- JS, Popper.js, and jQuery -->

@@ -1,7 +1,32 @@
 [
     {
-        "title": "The great test",
-        "author": "Tester",
-        "content": "This is a test"
+        "title": "Living",
+        "author": "Stephen King",
+        "content": "Get busy living or get busy dying.",
+        "date": "09-10-2020 10:02:25"
+    },
+    {
+        "title": "The first step ",
+        "author": " Mark Caine",
+        "content": "The first step toward success is taken when you refuse to be a captive of the environment in which you first find yourself.",
+        "date": "09-10-2020 10:02:52"
+    },
+    {
+        "title": "Twenty years",
+        "author": "Mark Twain",
+        "content": "Twenty years from now you will be more disappointed by the things that you didn\u2019t do than by the ones you did do.\u201d",
+        "date": "09-10-2020 10:04:03"
+    },
+    {
+        "title": "Powerful",
+        "author": " Audre Lorde",
+        "content": "When I dare to be powerful \u2013 to use my strength in the service of my vision, then it becomes less and less important whether I am afraid.",
+        "date": "09-10-2020 10:04:25"
+    },
+    {
+        "title": "Fail miserably",
+        "author": "John F. Kennedy",
+        "content": "Those who dare to fail miserably can achieve greatly.",
+        "date": "09-10-2020 10:04:57"
     }
 ]
